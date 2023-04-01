@@ -11,4 +11,8 @@ class User(Deletable, Base):
     username = Column(String(length=64), nullable=False)
     password = Column(String(length=256), nullable=False)
     
+    name = Column(String(length=256))
+    surname = Column(String(length=256))
+    
+    
     is_admin = Column(Boolean, default=False)
